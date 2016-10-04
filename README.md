@@ -1,6 +1,8 @@
 HELLO WORLD OF REPLACEMENT
 ==========================
 
+[![Build Status](https://travis-ci.org/bil588-msb/demoapp.svg?branch=master)](https://travis-ci.org/bil588-msb/demoapp)
+
 This project is a demo for replacing elements in a list.
 
 The inputs are a list, item to be replaced and new item to place instead.
