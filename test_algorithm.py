@@ -17,8 +17,14 @@ class TestReplace(unittest.TestCase):
     def test_emptyArray(self):
         self.assertListEqual([], replace_list([], 3, 6))
 
-    def test_noneArray(self):
-        self.assertIsNone(None, replace_list(None, 3, 6))
+    def test_wrongParamType1(self):
+        self.assertFalse(replace_list('a', 3, 6))
+
+    def test_wrongParamType2(self):
+        self.assertFalse(replace_list([10, 5, 20, 30, 5, 4], '3', 6))
+
+    def test_wrongParamType3(self):
+        self.assertFalse(replace_list([10, 5, 20, 30, 5, 4], 3, '6'))
 
 if __name__ == '__main__':
     unittest.main()
